@@ -10,12 +10,12 @@ import plotly
 
 # Keep this out of source code repository - save in a file or a database
 VALID_USERNAME_PASSWORD_PAIRS = {
-    'Mickey': 'Mouse', 'Donald': 'Duck'
+    'Ping': 'Pong', 'Donald': 'Duck'
 }
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
 server = app.server
 app.title='auth example'
 auth = dash_auth.BasicAuth(
@@ -25,7 +25,7 @@ auth = dash_auth.BasicAuth(
 
 app.layout = html.Div([
     html.H1('Welcome to the app'),
-    html.H3('You are successfully authorized'),
+    html.H3('You were successfully authorized'),
     dcc.Dropdown(
         id='dropdown',
         options=[{'label': i, 'value': i} for i in [1, 2, 3, 4, 5]],
