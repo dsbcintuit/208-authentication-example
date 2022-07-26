@@ -1,6 +1,10 @@
 import dash
 import dash_auth
-from dash import dcc, html, Input, Output, State
+from dash import dcc
+from dash import html
+from dash import Input
+from dash import Output
+from dash import State
 import plotly
 
 
