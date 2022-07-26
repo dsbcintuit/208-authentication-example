@@ -1,7 +1,6 @@
 import dash
 import dash_auth
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc, html, Input, Output, State
 import plotly
 
 
@@ -29,7 +28,7 @@ app.layout = html.Div([
         value=1
     ),
     dcc.Graph(id='graph'),
-    html.A('Code on Github', href='https://github.com/austinlasseter/dash-auth-example'),
+    html.A('Code on Github', href='https://github.com/dsbcintuit/208-authentication-example'),
     html.Br(),
     html.A("Data Source", href='https://dash.plotly.com/authentication'),
 ], className='container')
