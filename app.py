@@ -42,7 +42,7 @@ app.layout = html.Div([
     [dash.dependencies.Input('dropdown', 'value')])
 def update_graph(dropdown_value):
     x_values = [-3,-2,-1,0,1,2,3]
-    y_values = [x***dropdown_value for x in x_values]
+    y_values = [x**dropdown_value for x in x_values]
 
     return {
         'layout': {
